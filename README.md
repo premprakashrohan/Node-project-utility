@@ -15,3 +15,11 @@
    b.Transpilation
     npm install -g grunt-cli
     npm i --save-dev grunt grunt-ts grunt-tslint tslint typescript
+6. Jasmine
+    **Jasmine is a behaviorial design framework use in unit test**
+    Commands:
+    npm install jasmine
+    **Work using suites and specs**
+    jasmine init //to create jasmin.json
+    after create spec test file
+    run jasmine
