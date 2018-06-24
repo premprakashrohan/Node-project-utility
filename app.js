@@ -1,6 +1,1 @@
-// tslint:disable-next-line:only-arrow-functions
-function greet(name) {
-    return "Hello ${name}!";
-}
-console.log(greet('Prem'));
-//# sourceMappingURL=app.js.map
+[1, 2, 3, 4].map(function (num) { return num; });

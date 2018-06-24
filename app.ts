@@ -1,6 +1,6 @@
- // tslint:disable-next-line:only-arrow-functions
- function greet(name: string): string {
+[1, 2, 3, 4].map((num) => num);
+// Below show error after adding tslint configuration
+/*
+function greet(name: string): string {
     return "Hello ${name}!";
-}
-
-console.log(greet('Prem'));
+} */
