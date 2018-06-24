@@ -1,0 +1,24 @@
+{
+  "name": "node-project-utility",
+  "version": "1.0.0",
+  "description": "Describe all work around.",
+  "dependencies": {
+    "dependencieName": "version"
+  },
+  "devDependencies": {
+    "gulp-dependencies": "^0.1.1"
+  },
+  "scripts": {
+    "scriptName": "path/to/script"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/premprakashrohan/Node-project-utility"
+  },
+  "keywords": [],
+  "author": "Prem Prakash Rohan",
+  "license": "GNU GENERAL PUBLIC LICENSE",
+  "bugs": {
+    "url": "https://github.com/premprakashrohan/Node-project-utility/issues"
+  }
+}
