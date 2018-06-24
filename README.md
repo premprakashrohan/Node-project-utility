@@ -9,3 +9,9 @@
 4. Code linting for type script in visual studio
     npm i -g tslint
     <https://palantir.github.io/tslint/>
+5. Use Grunt
+   **Several packages available for Grunt and typeScript**
+   a.Linting
+   b.Transpilation
+    npm install -g grunt-cli
+    npm i --save-dev grunt grunt-ts grunt-tslint tslint typescript
