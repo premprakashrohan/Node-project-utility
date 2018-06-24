@@ -5,3 +5,4 @@
    tsc --sourceMap true app.ts
 3. starting python server
     python -m SimpleHTTPServer 8080
+4. 
