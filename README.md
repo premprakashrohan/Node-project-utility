@@ -23,3 +23,12 @@
     jasmine init //to create jasmin.json
     after create spec test file
     run jasmine
+7. Karma
+    **Test runner**
+    npm install karma karma-chrome-launcher jasmine-core karma-typescript
+    **run**
+    karma init
+    sudo node_modules/karma/bin/karma start --single-run
+    **Reporter**
+    npm install --save-dev karma-spec-reporter
+
