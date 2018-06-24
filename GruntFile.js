@@ -16,8 +16,10 @@ module.exports = function(grunt){
             }
         }
     });
+    //way to load npm task
     grunt.loadNpmTasks('grunt-ts');
     grunt.loadNpmTasks('grunt-tslint');
+    //registering task
     grunt.registerTask('default',['ts','tslint']);
 
 };
