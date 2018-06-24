@@ -2,11 +2,18 @@
   "name": "node-project-utility",
   "version": "1.0.0",
   "description": "Describe all work around.",
+  "main": "app.js",
   "dependencies": {
-    "dependencieName": "version"
+    "dependencieName": "version",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "gulp-dependencies": "^0.1.1"
+    "grunt": "^1.0.3",
+    "grunt-ts": "^6.0.0-beta.19",
+    "grunt-tslint": "^5.0.2",
+    "jasmine": "^3.1.0",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2"
   },
   "scripts": {
     "scriptName": "path/to/script"

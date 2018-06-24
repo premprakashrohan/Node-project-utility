@@ -1,2 +1,2 @@
 # Node-project-utility
-1. node init
+1. npm init -y
