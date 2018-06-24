@@ -37,3 +37,6 @@
     npm i --save-dev grunt-contrib-watch
 
 
+    npm i --save-dev grunt-exec
+
+

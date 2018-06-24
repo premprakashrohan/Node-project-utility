@@ -10,14 +10,20 @@ module.exports = function(grunt){
         watch: {
             scripts: {
                 files: ['*.ts'],
-                tasks: ['ts']
+                tasks: ['exec:jasmine','ts']
+            }
+        },
+        exec: {
+            jasmine: {
+                command: 'jasmine spec/product-spec.js'
             }
         }
     });
     //way to load npm task
     grunt.loadNpmTasks('grunt-ts');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    //registering task
-    grunt.registerTask('default',['ts','watch']);
+     grunt.loadNpmTasks('grunt-exec');
+     //registering task
+    grunt.registerTask('default',['exec:jasmine','ts','watch']);
 
 };
