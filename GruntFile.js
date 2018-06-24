@@ -3,23 +3,21 @@ module.exports = function(grunt){
         //Transpiling
         ts: {
             default: {
-                src: ['*.ts','!node_modules/**']
+                src: ['*.ts','!node_modules/**'],
+                tsconfig: true
             }
         },
-        //linting
-        tslint: {
-            options: {
-                configuration: 'tslint.json'
-            },
-            files: {
-                src: ["*.ts"]
+        watch: {
+            scripts: {
+                files: ['*.ts'],
+                tasks: ['ts']
             }
         }
     });
     //way to load npm task
     grunt.loadNpmTasks('grunt-ts');
-    grunt.loadNpmTasks('grunt-tslint');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     //registering task
-    grunt.registerTask('default',['ts','tslint']);
+    grunt.registerTask('default',['ts','watch']);
 
 };

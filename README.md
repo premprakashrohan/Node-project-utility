@@ -32,3 +32,8 @@
     **Reporter**
     npm install --save-dev karma-spec-reporter
 
+
+    **Watching the changes and compile on  change of file**
+    npm i --save-dev grunt-contrib-watch
+
+

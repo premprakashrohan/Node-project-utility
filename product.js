@@ -1,19 +1,17 @@
-"use strict";
-exports.__esModule = true;
-var Product = /** @class */ (function () {
-    function Product(name, price) {
-        this.name = name;
-        this.price = price;
+(function (factory) {
+    if (typeof module === "object" && typeof module.exports === "object") {
+        var v = factory(require, exports);
+        if (v !== undefined) module.exports = v;
     }
-    Product.prototype.getName = function () {
-        return this.name;
-    };
-    Product.prototype.getPrice = function () {
-        return this.price;
-    };
-    Product.prototype.getDiscounttedPrice = function (discount) {
-        return this.price - (this.price * discount / 100);
-    };
-    return Product;
-}());
-exports.Product = Product;
+    else if (typeof define === "function" && define.amd) {
+        define(["require", "exports", "./product-class"], factory);
+    }
+})(function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    var product_class_1 = require("./product-class");
+    var prod1 = new product_class_1.Product('Football', 100);
+    var discountPrice = prod1.getDiscounttedPrice(10);
+    console.log('${discountPrice}');
+});
+//# sourceMappingURL=product.js.map

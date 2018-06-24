@@ -1,0 +1,1 @@
+product-class.ts product.ts --sourcemap --removeComments --target ES5 --module umd
