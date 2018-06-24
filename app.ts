@@ -1,6 +1,13 @@
-[1, 2, 3, 4].map((num) => num);
-// Below show error after adding tslint configuration
-/*
-function greet(name: string): string {
-    return "Hello ${name}!";
-} */
+interface IPerson {
+    name: string;
+    age: number;
+    hobby: string[];
+}
+
+const prem: IPerson = {
+    age: 37,
+    hobby: ["Hardware", "Software"],
+    name: "Prem",
+};
+let cons = Console;
+cons.prototype.log(prem);

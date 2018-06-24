@@ -1,2 +1,7 @@
-[1, 2, 3, 4].map(function (num) { return num; });
-//# sourceMappingURL=app.js.map
+var prem = {
+    age: 37,
+    hobby: ["Hardware", "Software"],
+    name: "Prem",
+};
+var cons = Console;
+cons.prototype.log(prem);
