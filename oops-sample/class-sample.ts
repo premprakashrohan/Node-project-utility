@@ -1,10 +1,10 @@
-class Person {
+class Person1 {
     greet(name: string): void {
         console.log('Hello '+name + " !");
     }
 }
 
-class SuperHero extends Person {
+class SuperHero1 extends Person1 {
     hasCape(flag: boolean): void {
         if(flag){
             console.log('I have a cape!');
@@ -14,6 +14,6 @@ class SuperHero extends Person {
     }
 }
 
-const spiderman = new SuperHero();
+const spiderman = new SuperHero1();
 spiderman.greet('Prem Prakash Rohan');
 spiderman.hasCape(false);
