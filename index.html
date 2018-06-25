@@ -10,11 +10,25 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 <script src="app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#greet').click(function(){
+        $('#welcome').append('Welcome, '+ $('#name').val()+'!' );
+    });
+});
+</script>
 </head>
 
 <body>
 
     <div class="container-fluid">
+        <input type="text" id="name" />
+        <button id="greet">Greet me!</button>
+        <div id="welcome"/>
+<p>
+    <a class="credit" href="https://fullstack-developer.academy/">https://fullstack-developer.academy/</a>
+</p>
         <h1>My First Bootstrap Page</h1>
         <p>This is some text.</p>
     </div>

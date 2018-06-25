@@ -36,7 +36,15 @@
     **Watching the changes and compile on  change of file**
     npm i --save-dev grunt-contrib-watch
 
-
+    **Automate unit test**
     npm i --save-dev grunt-exec
 
-
+8. **End To End test(selinium)**
+    npm i -g protractor
+    webdriver-manager update
+    **Start the selinium server**
+    webdriver-manager start
+    **start the http server**
+     python -m SimpleHTTPServer 8080
+     **run command**
+     protractor conf.js
