@@ -48,3 +48,9 @@
      python -m SimpleHTTPServer 8080
      **run command**
      protractor conf.js
+
+
+
+9. Typescript for Nodejs
+    npm i @types/node
+    npm i --g ts-node

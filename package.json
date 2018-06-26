@@ -4,6 +4,7 @@
   "description": "Describe all work around.",
   "main": "app.js",
   "dependencies": {
+    "@types/node": "^10.3.6",
     "@types/ramda": "^0.25.34",
     "dependencieName": "version",
     "test": "echo \"Error: no test specified\" && exit 1"
