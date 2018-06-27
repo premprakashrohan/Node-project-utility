@@ -61,3 +61,10 @@
     configure in nodemon.js
     compiles with tsc, tsconfig
     npm i -g nodemon
+
+12 Angular js 5
+    npm i -g @angular/cli
+    npm init [name]
+    ng serve // Start the server
+    **Create component through CLI**
+    ng g [generate] c [name]
