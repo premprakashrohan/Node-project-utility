@@ -54,3 +54,10 @@
 9. Typescript for Nodejs
     npm i @types/node
     npm i --g ts-node
+10. Rest API
+    npm i --save restify @types/restify restify-cors-middleware @types/restify-cors-middleware
+
+11. Nodemon
+    configure in nodemon.js
+    compiles with tsc, tsconfig
+    npm i -g nodemon
