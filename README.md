@@ -68,3 +68,4 @@
     ng serve // Start the server
     **Create component through CLI**
     ng g [generate] c [name]
+    ng g s [name]
