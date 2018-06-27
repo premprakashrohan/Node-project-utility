@@ -1,13 +1,12 @@
 <p>
   Hello from my second component
 </p>
-<form #form="ngForm" (ngSubmit)="submitForm()">
+<form [formGroup]="form" (ngSubmit)="submitForm()">
   <p>Product Name:
-    <input type="text" required [ngClass]="[name.errors && (name.dirty || name.errors.required) ? 'invalid':'valid']" [(ngModel)]="product.name" name="name" #name="ngModel">
+    <input type="text" formControlName="name" [ngClass]="[form.get('name').errors && !form.get('name').dirty  ? 'invalid':'valid']" >
 </p>
 <p>Product Price:
-<input type="number" required [ngClass]="[price.errors && (price.dirty || price.errors.required) ? 'invalid':'valid']" [(ngModel)]="product.price"
-  name="price" #name="ngModel">
+<input type="number" formControlName="price" [ngClass]="[form.get('price').errors && !form.get('price').dirty  ? 'invalid':'valid']">
 </p>
 <p>
   <button type="submit" [disabled]="!form.valid">Submit Form!</button>
