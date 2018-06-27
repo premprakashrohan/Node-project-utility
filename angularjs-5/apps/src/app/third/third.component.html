@@ -1,3 +1,6 @@
-<p>
-  Hello <span [appCustom]="'yellow'"> world!</span>
-</p>
+<p>Year of birth</p>
+<select>
+<ng-container *appCustom="[1950, 2018]; let year;">
+    <option [ngValue]="year"{{ year }}></option>
+  </ng-container>
+</select>
