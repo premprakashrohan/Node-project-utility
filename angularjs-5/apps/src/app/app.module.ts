@@ -8,12 +8,16 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first-component/first-component';
 import { SecondComponent } from './second/second.component';
 import { ProductService} from './product.service';
+import { ThirdComponent } from './third/third.component';
+import { CustomDirective } from './custom.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    SecondComponent
+    SecondComponent,
+    ThirdComponent,
+    CustomDirective
   ],
   imports: [
     BrowserModule,
