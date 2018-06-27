@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./second.component.css']
 })
 export class SecondComponent implements OnInit {
-
+  product = { };
   constructor() { }
 
   ngOnInit() {
+  }
+
+  submitForm() {
+    console.log(this.product);
   }
 
 }
