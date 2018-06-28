@@ -48,3 +48,24 @@
      python -m SimpleHTTPServer 8080
      **run command**
      protractor conf.js
+
+
+
+9. Typescript for Nodejs
+    npm i @types/node
+    npm i --g ts-node
+10. Rest API
+    npm i --save restify @types/restify restify-cors-middleware @types/restify-cors-middleware
+
+11. Nodemon
+    configure in nodemon.js
+    compiles with tsc, tsconfig
+    npm i -g nodemon
+
+12 Angular js 5
+    npm i -g @angular/cli
+    npm init [name]
+    ng serve // Start the server
+    **Create component through CLI**
+    ng g [generate] c [name]
+    ng g s [name]

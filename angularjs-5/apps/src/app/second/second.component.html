@@ -1,0 +1,14 @@
+<p>
+  Hello from my second component
+</p>
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+  <p>Product Name:
+    <input type="text" formControlName="name" [ngClass]="[form.get('name').errors && !form.get('name').dirty  ? 'invalid':'valid']" >
+</p>
+<p>Product Price:
+<input type="number" formControlName="price" [ngClass]="[form.get('price').errors && !form.get('price').dirty  ? 'invalid':'valid']">
+</p>
+<p>
+  <button type="submit" [disabled]="!form.valid">Submit Form!</button>
+</p>
+</form>

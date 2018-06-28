@@ -4,7 +4,13 @@
   "description": "Describe all work around.",
   "main": "app.js",
   "dependencies": {
+    "@types/node": "^10.3.6",
+    "@types/ramda": "^0.25.34",
+    "@types/restify": "^7.2.1",
+    "@types/restify-cors-middleware": "^1.0.1",
     "dependencieName": "version",
+    "restify": "^7.2.1",
+    "restify-cors-middleware": "^1.1.1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
@@ -23,6 +29,7 @@
     "karma-spec-reporter": "0.0.32",
     "karma-typescript": "^3.0.12",
     "protractor": "^5.3.2",
+    "ramda": "^0.25.0",
     "tslint": "^5.10.0",
     "typescript": "^2.9.2"
   },

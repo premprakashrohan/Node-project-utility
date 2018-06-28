@@ -3,6 +3,8 @@
         "tslint:recommended"
     ],
     "rules":{
-        "only-arrow-functions":true
+        "only-arrow-functions":false,
+        "no-unnecessary-type-assertion": true,
+        "no-angle-bracket-type-assertion":false,
     }
 }
